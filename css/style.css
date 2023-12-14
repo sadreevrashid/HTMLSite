@@ -1,0 +1,149 @@
+.shop_img{
+width: 450px;
+}
+.container{
+	margin: 0 auto;
+	width: 1000px;
+}
+.menu{
+	background:#E5DCB0;
+width: 200px;
+padding: 5px;
+border-radius: 5%;
+
+}
+.is-active{
+	display: none;
+}
+.nav_list{
+display: flex;
+list-style: none;
+justify-content: space-between;
+width: 60%;
+}
+.nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.header{
+	background: #d8ab4e ;
+}
+.nav_link{
+	text-decoration: none;
+	color: #D05B25 ;
+	font-weight: bold;
+}
+.logo{
+	color:  #D05B25 ;
+	font-weight: bold;
+	border: 3px solid ;
+	padding: 5px;
+	border-radius: 10%;
+}
+.footer{
+	background: #d8ab4e;
+	color:  #D05B25;
+	font-weight: bold;
+	padding: 15px;
+}
+.footer_text{
+	border: 3px solid;
+	padding: 5px;
+	border-radius: 10px;
+	width: 200px;
+	display: ;
+	fex
+
+
+}
+.main{
+	padding: 10px 0;
+	background: RGB(229, 223, 204) ;
+}
+.shop_title{
+	margin: 20px;
+	color:  #b48c36;
+}
+.google_title{
+	color:  #b48c36;
+	margin: 20px;
+}
+.yandex_title{
+	color:  #b48c36;
+	margin: 20px;
+}
+.btn_menu{
+	background: #A4C88A ;
+}
+.dark{
+	background: black;
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
+}
+.light{
+	background: white;
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
+}
+.burger_line{
+	background: #E5DCB0;
+	width: 50px;
+	height: 10px;
+	margin-bottom: 5px;
+	
+}
+.burger_line{
+	border-radius: 5px;
+	transition: 1s;
+}
+.burger{
+display: none;
+}
+@media (max-width : 1000px)
+{
+	.nav_list{
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		right: -325px;
+		height: 40%;
+		top: 80px;
+		z-index: 2;
+		background: #d8ab4e ;
+		padding: 30px 20px;
+		transform: translateX(100%) rotate(22deg);
+		transition: 1s;
+		border-radius: 7%;
+	}
+	.burger{
+		display: block;
+		cursor: pointer;
+	}
+	.container{
+		width: 600px;
+	}
+	.nav_list-active{
+		transform: translateX(0);
+	}
+	body{
+		overflow-x: hidden;
+	}
+	.active .burger_line1{
+transform: translate(0,24px) rotate(45deg);
+transition: 1s;
+	}
+	.active .burger_line2{
+transform: translate(0,10px) rotate(130deg);
+transition: 1s;
+	}
+	.active .burger_line3{
+opacity: 0;
+transition: 1s;
+	}
+}

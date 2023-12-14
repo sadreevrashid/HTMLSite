@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/itc-slider.css">
+<link rel="stylesheet" href="css/accordion.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+        <nav class="nav">
+            <h3 class="logo">Knigoman </h3>
+            <ul class="nav_list">
+             <li class="nav_item"><a href="" class="nav_link">Книги</a></li>
+<li class="nav_item"><a href="" class="nav_link">Авторы</a></li>
+<li class="nav_item"><a href="" class="nav_link">Жанры</a></li>
+<li class="nav_item"><a href="" class="nav_link">Подборка</a></li>
+<li class="nav_item"><a href="" class="nav_link">Доставка</a></li>
+            </ul>
+            <div class="burger" onclick="burgerClick()">
+                <div class="burger_line burger_line1"></div>
+                <div class="burger_line burger_line2"></div>
+                <div class="burger_line burger_line3"></div>
+            </div>
+        </nav>
+        <button class="btn_menu">Меню</button>
+        <div class="menu is-active">
+            <ul class="menu_list">
+                <li class="menu_item">Акции</li>
+                <li class="menu_item">Распродажа</li>
+                <li class="menu_item">Партнёрская программа</li>
+            </ul>
+            <h4 class="themes_title">Темы</h4>
+            <ul class="themes_list">
+                <li class="themes_item">
+                    <div class="dark" onclick="dark()"></div>
+                </li>
+                 <li class="themes_item">
+                    <div class="light" onclick="light()"></div>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="shop">
+    <div class="container">
+        <h1 class="shop_title">Книга Э.М.Ремарк "Земля обетованная"</h1>
+        <div class="itc-slider" data-slider="itc-slider">
+  <div class="itc-slider-wrapper">
+    <div class="itc-slider-items">
+      <div class="itc-slider-item">
+        <!-- Контент 1 слайда -->
+        <img src="img/book.jpeg" alt="" class="shop_img">
+      </div>
+      <div class="itc-slider-item">
+        <!-- Контент 2 слайда -->
+        <img src="img/img_two.webp"  class="shop_img" alt="">
+      </div>
+      <div class="itc-slider-item">
+        <!-- Контент 3 слайда -->
+        <img src="img/orig.webp" alt="" class="shop_img">
+      </div>
+    </div>
+  </div>
+  <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+  <button class="itc-slider-btn itc-slider-btn-prev"></button>
+  <button class="itc-slider-btn itc-slider-btn-next"></button>
+</div>
+
+        <div class="accordion" id="accordion-1">
+            <div class="accordion__item">
+                <div class="accordion__header">
+                    О товаре:
+                </div>
+                <div class="accordion__body">
+                     <p class="shop_text">Последний роман Эриха Марии Ремарка. Возможно – самый крупный. Возможно – самый сильный. Возможно – самый трагический.
+Судьба немецких эмигрантов в Америке.
+Они бежали от фашизма, используя все возможные и невозможные способы и средства. Бежали к последнему бастиону свободы и независимости. Однако Америка почему-то не спешит встретить их с распростертыми объятьями. Беглецов ждет благопристойное и дружелюбное равнодушие обитателей страны, давно забывшей, что такое война и тоталитарный режим. И каждому из эмигрантов предстоит заново строить жизнь там, где им предлагают только одно – рассчитывать исключительно на себя.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header">
+                  <pclass="shop_title">Цена</p>  
+                </div>
+                 <div class="accordion__body">
+                    <p class="price">389p</p>
+<button class="btn_menu" id="btn" onclick="buy()">Купить</button>
+                </div>
+            </div>
+        </div>
+
+        
+    
+    </div>
+</section>
+<section class="maps">
+    <div class="container">
+        <div class="google">
+            <h2 class="google_title">Гугл-карта</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340830.54922146944!2d36.957136435513526!3d55.86115002388185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53572108a6023%3A0x9efc61d2008047b8!2z0JrQvdC40LbQvdGL0Lkg0LjQvdGC0LXRgNC90LXRgi3QvNCw0LPQsNC30LjQvSDQm9Cw0LHQuNGA0LjQvdGC!5e0!3m2!1sru!2sru!4v1699550593547!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="yandex">
+    <h2 class="yandex_title">Яндекс-карта</h2>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7b0068b5c0c6a35219440a2848466a4367f33f4f417ff1ce4b8c030851c2b541&amp;source=constructor" width="511" height="407" frameborder="0"></iframe>
+</div>
+    </div>
+    
+</section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer_text">Все права защищены 2023</p>
+        </div>
+    </footer>
+
+
+
+    <script src="scripts/accordion.js"></script>
+<script src="scripts/menu.js"></script>
+ <script src="scripts/script.js"></script>
+ <script src="scripts/itc-slider.js"></script>
+ <script src="scripts/themes.js"></script>
+ <script src="scripts/burger.js"></script>
+</body>
+</html>
+
+
